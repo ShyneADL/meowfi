@@ -1,0 +1,21 @@
+@font-face {
+  font-family: Rainball;
+  src: url("../src/assets/fonts/Rainball.ttf") format("truetype");
+}
+@font-face {
+  font-family: Inter;
+  src: url("../src/assets/fonts/Inter.ttf") format("truetype");
+}
+@import "tailwindcss";
+
+@theme {
+  --font-Rainball: "Rainball", sans-serif;
+  --font-Inter: "Inter", sans-serif;
+
+  --color-Primary: "#561E05";
+  --color-Primary-100: "#D9AD99";
+  --color-Primary-500: "#FD5910";
+  --color-Star: "#F27036";
+  --color-Black: "#030202";
+  --color-White: "#F4F4F4";
+}
