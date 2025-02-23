@@ -46,7 +46,11 @@ const Hero = () => {
         </div>
         <img
           src="/images/cat-hero.png"
-          className="absolute right-[40px] -bottom-[16px] w-[510px] h-[618px] z-[1] object-contain"
+          className="absolute right-[40px] -bottom-[0px] z-[1] object-contain"
+          style={{
+            width: "clamp(510px, 40vw, 800px)", // Scales between 510px and 800px
+            height: "auto", // Maintains aspect ratio
+          }}
         />
       </div>
     </div>
