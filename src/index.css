@@ -12,10 +12,161 @@
   --font-Rainball: "Rainball", sans-serif;
   --font-Inter: "Inter", sans-serif;
 
-  --color-Primary: "#561E05";
-  --color-Primary-100: "#D9AD99";
-  --color-Primary-500: "#FD5910";
-  --color-Star: "#F27036";
-  --color-Black: "#030202";
-  --color-White: "#F4F4F4";
+  --color-primary: #561e05;
+  --color-primary-100: #d9ad99;
+  --color-primary-500: #fd5910;
+  --color-star: #f27036;
+  --color-Black: #030202;
+  --color-White: #f4f4f4;
+}
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.navlink {
+  background: url("/images/navlink-box.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 136.71px;
+  height: 48px;
+  @apply flex items-center justify-center;
+}
+
+h1 {
+  font-size: clamp(32px, 12vw, 128px);
+}
+
+.hero {
+  background: url("/images/cat-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.clip {
+  clip-path: inset(0 0 0% 0);
+}
+
+.clip p {
+  animation: flick 3s infinite
+    linear(
+      0 0%,
+      0 2.27%,
+      0.02 4.53%,
+      0.04 6.8%,
+      0.06 9.07%,
+      0.1 11.33%,
+      0.14 13.6%,
+      0.25 18.15%,
+      0.39 22.7%,
+      0.56 27.25%,
+      0.77 31.8%,
+      1 36.35%,
+      0.89 40.9%,
+      0.85 43.18%,
+      0.81 45.45%,
+      0.79 47.72%,
+      0.77 50%,
+      0.75 52.27%,
+      0.75 54.55%,
+      0.75 56.82%,
+      0.77 59.1%,
+      0.79 61.38%,
+      0.81 63.65%,
+      0.85 65.93%,
+      0.89 68.2%,
+      1 72.7%,
+      0.97 74.98%,
+      0.95 77.25%,
+      0.94 79.53%,
+      0.94 81.8%,
+      0.94 84.08%,
+      0.95 86.35%,
+      0.97 88.63%,
+      1 90.9%,
+      0.99 93.18%,
+      0.98 95.45%,
+      0.99 97.73%,
+      1 100%
+    );
+}
+
+@keyframes flick {
+  0%,
+  10%,
+  90%,
+  100% {
+    transform: translateY(0);
+  }
+  45%,
+  55% {
+    transform: translateY(-100%);
+  }
+}
+
+.buy-btn {
+  /* ff 3.6+ */
+  background: -moz-linear-gradient(
+    110deg,
+    rgba(253, 89, 16, 1) 0%,
+    rgba(151, 53, 10, 1) 100%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-linear-gradient(
+    110deg,
+    rgba(253, 89, 16, 1) 0%,
+    rgba(151, 53, 10, 1) 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-linear-gradient(
+    110deg,
+    rgba(253, 89, 16, 1) 0%,
+    rgba(151, 53, 10, 1) 100%
+  );
+
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#97350A', endColorstr='#FD5910', GradientType=0 );
+
+  /* ie 10+ */
+  background: -ms-linear-gradient(
+    110deg,
+    rgba(253, 89, 16, 1) 0%,
+    rgba(151, 53, 10, 1) 100%
+  );
+
+  /* global 94%+ browsers support */
+  background: linear-gradient(
+    110deg,
+    rgba(253, 89, 16, 1) 0%,
+    rgba(151, 53, 10, 1) 100%
+  );
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.animate-scroll {
+  animation: scroll 20s linear infinite;
 }
