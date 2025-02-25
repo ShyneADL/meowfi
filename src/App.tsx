@@ -1,6 +1,7 @@
 import About from "./sections/About";
 import Hero from "./sections/Hero";
 import InfiniteSlider from "./sections/InfiniteSlider";
+import HTB from "./sections/HTB";
 
 const App = () => {
   return (
@@ -8,6 +9,7 @@ const App = () => {
       <Hero />
       <InfiniteSlider />
       <About />
+      <HTB />
     </div>
   );
 };

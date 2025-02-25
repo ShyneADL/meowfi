@@ -1,7 +1,7 @@
 import Navbar from "./Navbar";
-import tg from "/images/tg.png";
-import x from "/images/x.png";
-import dc from "/images/dc.png";
+import tg from "/images/tg.webp";
+import x from "/images/x.webp";
+import dc from "/images/dc.webp";
 
 const icons = [
   {
@@ -45,7 +45,7 @@ const Hero = () => {
           ))}
         </div>
         <img
-          src="/images/cat-hero.png"
+          src="/images/cat-hero.webp"
           className="absolute right-[40px] -bottom-[0px] z-[1] object-contain"
           style={{
             width: "clamp(510px, 40vw, 800px)", // Scales between 510px and 800px

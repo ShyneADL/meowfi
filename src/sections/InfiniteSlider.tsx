@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 const Meowfi = () => {
   return (
     <div className="flex items-end gap-2">
-      <img src="/images/small-cat.png" className="w-[37px] h-8" />
+      <img src="/images/small-cat.webp" className="w-[37px] h-8" />
       <p className="font-Rainball text-[24px] text-white h-6">Meowfi</p>
     </div>
   );

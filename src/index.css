@@ -44,7 +44,7 @@ body {
 }
 
 .navlink {
-  background: url("/images/navlink-box.png");
+  background: url("/images/navlink-box.webp");
   background-repeat: no-repeat;
   background-position: center;
   width: 136.71px;
@@ -57,7 +57,7 @@ h1 {
 }
 
 .hero {
-  background: url("/images/cat-bg.png");
+  background: url("/images/cat-bg.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -181,7 +181,7 @@ h1 {
 }
 
 .about-box {
-  background: url("/images/about-box.png");
+  background: url("/images/about-box.webp");
   background-repeat: no-repeat;
   background-position: top;
   background-size: contain;
@@ -189,7 +189,7 @@ h1 {
 }
 
 .about-bg {
-  background: url("/images/about-bg.png");
+  background: url("/images/about-bg.webp");
   background-repeat: no-repeat;
   background-position: top;
   background-size: contain;
