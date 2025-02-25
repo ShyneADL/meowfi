@@ -187,3 +187,11 @@ h1 {
   background-size: contain;
   @apply w-[751px] h-[410px] pl-[95px] pr-[44px] pt-[50px] pb-[25px];
 }
+
+.about-bg {
+  background: url("/images/about-bg.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  width: 100%;
+}

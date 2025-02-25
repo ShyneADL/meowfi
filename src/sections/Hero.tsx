@@ -20,7 +20,7 @@ const icons = [
 
 const Hero = () => {
   return (
-    <div className=" relative hero flex-1 h-[100vh]">
+    <div className=" relative hero w-full h-[100vh] overflow-x-hidden">
       <Navbar />
       <div className="flex flex-col items-start gap-6 mt-[82px] lg:px-[100px] md:px-[60px] px-6 z-[2]">
         <h1 className="font-Rainball text-white leading-[90%] tracking-[-1%] max-w-[1031px] w-full z-[2]">
