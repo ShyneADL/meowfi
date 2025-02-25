@@ -195,3 +195,10 @@ h1 {
   background-size: contain;
   width: 100%;
 }
+
+.htb-bg {
+  background: url("/images/htb-bg.webp");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+}
