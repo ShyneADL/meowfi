@@ -6,11 +6,16 @@
   font-family: Inter;
   src: url("../src/assets/fonts/Inter.ttf") format("truetype");
 }
+@font-face {
+  font-family: Veritas;
+  src: url("../src/assets/fonts/LTVeritas-Regular.ttf") format("truetype");
+}
 @import "tailwindcss";
 
 @theme {
   --font-Rainball: "Rainball", sans-serif;
   --font-Inter: "Inter", sans-serif;
+  --font-Veritas: "Veritas", sans-serif;
 
   --color-primary: #561e05;
   --color-primary-100: #d9ad99;
@@ -169,4 +174,16 @@ h1 {
 }
 .animate-scroll {
   animation: scroll 20s linear infinite;
+}
+
+.about {
+  color: hsla(0, 3%, 1%, 0.85);
+}
+
+.about-box {
+  background: url("/images/about-box.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  @apply w-[751px] h-[410px] pl-[95px] pr-[44px] pt-[50px] pb-[25px];
 }

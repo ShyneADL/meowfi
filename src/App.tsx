@@ -1,3 +1,4 @@
+import About from "./sections/About";
 import Hero from "./sections/Hero";
 import InfiniteSlider from "./sections/InfiniteSlider";
 
@@ -6,6 +7,7 @@ const App = () => {
     <div className="flex-1">
       <Hero />
       <InfiniteSlider />
+      <About />
     </div>
   );
 };

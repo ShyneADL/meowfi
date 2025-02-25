@@ -13,7 +13,7 @@ const Meowfi = () => {
 export default function InfiniteSlider() {
   return (
     <section className="w-full bg-primary text-white overflow-hidden py-6">
-      <div className="max-w-[1280px] mx-auto">
+      <div className="w-full mx-auto">
         <div className="flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
           <motion.div
             className="flex flex-none gap-20 pr-20"
