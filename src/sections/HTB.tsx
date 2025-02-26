@@ -13,7 +13,7 @@ const htbDetails = [
   },
   {
     id: 2,
-    title: "Get a Wallet",
+    title: "Swap & Confirm",
     desc: 'Enter the amount, complete the swap, and enjoy your <span class="font-bold">$MEOW</span> token',
     image: "/images/wood-1.webp",
   },
@@ -21,33 +21,57 @@ const htbDetails = [
 
 const HTB = () => {
   return (
-    <div className="relative top-[-25px] flex flex-col items-start htb-bg h-[100vh] px-[73px] pt-[39px] flex-1 w-full z-50">
+    <div className="relative top-[-25px] flex flex-col items-start htb-bg min-h-[100vh] px-[73px] py-[39px] flex-1 w-full z-50">
       <h3 className="font-Rainball text-[57px] leading-[130%] tracking-[-1%] text-White rotate-[-6.55deg] mt-4 2xl:mt-8">
         How to Buy $meow
       </h3>
-      <div className="flex items-row gap-2 items-start justify-center w-full">
-        {htbDetails.map((item) => (
-          <div className="relative w-[360px] h-[685px] z-20">
-            <img
-              src={item.image}
-              alt={item.title}
-              className="flex-1 object-contain"
-            />
-            <div className="absolute top-[40%] -translate-y-[40%] left-1/2 -translate-x-1/2 flex flex-col items-center text-center w-[304px] gap-5">
-              <h4 className="font-Inter font-bold text-[28px] leading-[111%] text-[#030202]">
-                {item.title}
-              </h4>
-              <p
-                className="font-Inter font-normal text-[21px] leading-[111%] text-black"
-                dangerouslySetInnerHTML={{ __html: item.desc }}
+      <div className="relativeflex flex-col items-center justify-end w-full">
+        <div className="relative flex flex-wrap items-row gap-2 items-end justify-center w-full">
+          {htbDetails.map((item) => (
+            <div
+              className="relative z-20"
+              style={{
+                width: "clamp(252px, 28.125vw, 432px)",
+                height: "clamp(479px, 53.515vw, 822px)",
+              }}
+            >
+              <img
+                src={item.image}
+                alt={item.title}
+                className="flex-1 object-contain"
               />
+              <div
+                className="absolute top-[40%] -translate-y-[40%] left-1/2 -translate-x-1/2 flex flex-col items-center text-center"
+                style={{
+                  width: "clamp(213px, 23.75vw, 365px)",
+                  gap: "clamp(12px, 1.5vw, 20px)",
+                }}
+              >
+                <h4
+                  className="font-Inter font-bold text-[#030202]"
+                  style={{
+                    fontSize: "clamp(20px, 2.19vw, 34px)",
+                    lineHeight: "clamp(22px, 2.43vw, 38px)",
+                  }}
+                >
+                  {item.title}
+                </h4>
+                <p
+                  className="font-Inter font-normal text-black"
+                  style={{
+                    fontSize: "clamp(15px, 1.8vw, 26px)",
+                    lineHeight: "clamp(17px, 2vw, 29px)",
+                  }}
+                  dangerouslySetInnerHTML={{ __html: item.desc }}
+                />
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
         <img
-          src="/images/htb-bottom.svg"
+          src="/images/htb-bottom.png"
           alt="htb-bottom"
-          className=" lg:flex hidden absolute bottom-0 left-1/2 -translate-x-1/2 w-[981px] h-[135px] z-10"
+          className="lg:flex hidden relative bottom-[20%] -translate-y-[20%] left-1/2 -translate-x-1/2 w-[981px] h-[135px] z-[1] object-contain"
         />
       </div>
     </div>
