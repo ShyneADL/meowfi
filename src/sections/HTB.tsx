@@ -21,11 +21,11 @@ const htbDetails = [
 
 const HTB = () => {
   return (
-    <div className="relative top-[-25px] flex flex-col items-start htb-bg min-h-[100vh] px-[73px] py-[39px] flex-1 w-full z-50">
+    <div className="relative top-[-25px] flex flex-col items-start htb-bg min-h-[100vh] px-[73px] pt-[39px] flex-1 w-full z-50">
       <h3 className="font-Rainball text-[57px] leading-[130%] tracking-[-1%] text-White rotate-[-6.55deg] mt-4 2xl:mt-8">
         How to Buy $meow
       </h3>
-      <div className="relativeflex flex-col items-center justify-end w-full">
+      <div className=" w-full">
         <div className="relative flex flex-wrap items-row gap-2 items-end justify-center w-full">
           {htbDetails.map((item) => (
             <div
