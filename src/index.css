@@ -186,7 +186,7 @@ h1 {
     background-repeat: no-repeat;
     background-position: top;
     background-size: contain;
-    @apply lg:w-[751px] lg:h-[410px] ;
+    @apply lg:w-[751px] lg:h-[410px] w-full h-[auto];
     /* width: clamp(300px, 58.67vw, 751px); 
     height: clamp(164px, 32.03vw, 410px);  */
     padding-left: clamp(48px, 7.42vw, 95px); 
@@ -195,7 +195,7 @@ h1 {
     padding-bottom: clamp(10px, 1.95vw, 25px); 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .about-box {
     background: url("/images/about-box-mobile.png");
     @apply w-full h-full;
