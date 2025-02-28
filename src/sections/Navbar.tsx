@@ -7,7 +7,7 @@ const navLinks = [
 
 const Navbar = () => {
   return (
-    <nav className="pt-[40px] overflow-x-hidden">
+    <nav className="pt-[40px] overflow-x-hidden z-50">
       <ul className="flex items-center gap-6 justify-center w-full">
         {navLinks.map((link) => (
           <li className="navlink cursor-pointer" key={link.title}>

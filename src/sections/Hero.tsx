@@ -35,7 +35,7 @@ const Hero = () => {
           the community.
         </p>
         <div className="flex items-center gap-4 mt-9 z-[20]">
-          <button className="buy-btn rounded-[100px] p-[4px]">
+          <button className="buy-btn rounded-[100px] cursor-pointer p-[4px]">
             <div className="bg-primary-100 font-Rainball text-black text-2xl tracking-[-1%] rounded-[100px] py-[15px] px-[102px]">
               <p className="w-[105px]">Buy Meowfi</p>
             </div>
@@ -46,7 +46,7 @@ const Hero = () => {
         </div>
         <img
           src="/images/cat-hero.webp"
-          className="absolute right-[40px] -bottom-[0px] z-[1] object-contain"
+          className="absolute right-[40px] -bottom-[0px] z-[0] object-contain"
           style={{
             width: "clamp(510px, 40vw, 800px)", // Scales between 510px and 800px
             height: "auto", // Maintains aspect ratio

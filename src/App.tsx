@@ -6,7 +6,7 @@ import Footer from "./sections/Footer";
 
 const App = () => {
   return (
-    <div className="flex-1">
+    <div className="">
       <Hero />
       <InfiniteSlider />
       <About />

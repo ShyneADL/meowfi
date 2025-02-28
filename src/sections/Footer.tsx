@@ -7,7 +7,7 @@ const navLinks = [
 
 const Footer = () => {
   return (
-    <div className="bg-[#622409] relative mt-[-80px] flex flex-col items-center justify-center pt-[60px] pb-[33px] w-full z-[120]">
+    <div className="bg-[#622409] relative mt-[-80px] flex flex-col items-center justify-center pt-[60px] pb-[33px] w-full z-[120] overflow-x-hidden">
   <div className="flex items-end gap-[68px]">
     <img
       src="/images/footer-cat.webp"
