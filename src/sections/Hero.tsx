@@ -20,7 +20,7 @@ const icons = [
 
 const Hero = () => {
   return (
-    <div className=" relative hero w-full h-[100vh] overflow-x-hidden">
+    <div className=" relative hero w-full min-h-[100vh] pb-20 overflow-x-hidden">
       <Navbar />
       <div className="flex flex-col items-start gap-6 mt-[82px] lg:px-[100px] md:px-[60px] px-6 z-[2]">
         <h1 className="font-Rainball text-white leading-[90%] tracking-[-1%] max-w-[1031px] w-full z-[2]">
@@ -34,21 +34,25 @@ const Hero = () => {
           Memes were never meant to be owned by algorithms. Now, they belong to
           the community.
         </p>
-        <div className="flex items-center gap-4 mt-9 z-[20]">
+        <div className="flex items-center lg:flex-row flex-col gap-4 mt-9 z-[20] lg:w-[auto] w-full">
           <button className="buy-btn rounded-[100px] cursor-pointer p-[4px]">
             <div className="bg-primary-100 font-Rainball text-black text-2xl tracking-[-1%] rounded-[100px] py-[15px] px-[102px]">
               <p className="w-[105px]">Buy Meowfi</p>
             </div>
           </button>
+          <div className='flex items-center gap-4'>
+
+
           {icons.map((icon) => (
             <img className="size-[48.56px]" src={icon.icon} alt={icon.alt} />
           ))}
+            </div>
         </div>
         <img
           src="/images/cat-hero.webp"
-          className="absolute right-[40px] -bottom-[0px] z-[0] object-contain"
+          className="absolute lg:right-[40px] right-0 bottom-[0px] z-[0] object-contain"
           style={{
-            width: "clamp(510px, 40vw, 800px)", // Scales between 510px and 800px
+            width: "clamp(250px, 40vw, 800px)", // Scales between 510px and 800px
             height: "auto", // Maintains aspect ratio
           }}
         />

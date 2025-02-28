@@ -53,7 +53,7 @@ body {
 }
 
 h1 {
-  font-size: clamp(32px, 12vw, 128px);
+  font-size: clamp(50px, 12vw, 128px);
 }
 
 .hero {
