@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <div className="relative flex lg:flex-row flex-col items-start lg:justify-between lg:px-20 px-4 pt-[30px] min-h-[100vh] overflow-x-hidden w-full">
+    <div className="relative flex lg:flex-row flex-col items-start lg:justify-between lg:px-20 px-2 pt-[30px] min-h-[100vh] overflow-x-hidden w-full">
       <div className="relative h-[190px] z-[300]">
         <h2
           className="font-Rainball font-normal about leading-[85.22px] tracking-[-1%]"
