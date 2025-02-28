@@ -181,11 +181,18 @@ h1 {
 }
 
 .about-box {
-  background: url("/images/about-box.webp");
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: contain;
-  @apply w-[751px] h-[410px] pl-[95px] pr-[44px] pt-[50px] pb-[25px];
+  
+    background: url("/images/about-box.webp");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    @apply lg:w-[751px] w-full aspect-[1.83/1];
+    /* width: clamp(300px, 58.67vw, 751px); 
+    height: clamp(164px, 32.03vw, 410px);  */
+    padding-left: clamp(38px, 7.42vw, 95px); 
+    padding-right: clamp(17.6px, 3.44vw, 44px); 
+    padding-top: clamp(20px, 3.91vw, 50px); 
+    padding-bottom: clamp(10px, 1.95vw, 25px); 
 }
 
 .htb-bg {
