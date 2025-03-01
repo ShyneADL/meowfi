@@ -22,7 +22,7 @@ const Hero = () => {
   return (
     <div className=" relative hero w-full min-h-[100vh] pb-20 overflow-x-hidden">
       <Navbar />
-      <div className="flex flex-col items-start gap-6 mt-[82px] lg:px-[100px] md:px-[60px] px-6 z-[2]">
+      <div className="flex flex-col items-start gap-6 md:mt-[82px] mt-10 lg:px-[100px] md:px-[60px] px-6 z-[2]">
         <h1 className="font-Rainball text-white leading-[90%] tracking-[-1%] max-w-[1031px] w-full z-[2]">
           MEOWFI: The Future of{" "}
           <span className="inline-flex flex-col text-black relative clip">

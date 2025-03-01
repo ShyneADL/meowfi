@@ -21,7 +21,7 @@ const htbDetails = [
 
 const HTB = () => {
   return (
-    <div className="relative mt-[-25px] flex flex-col items-start htb-bg lg:min-h-[100vh] h- lg:px-[73px] px-5 pt-[39px] flex-1 w-full z-50 overflex-x-hidden">
+    <div className="relative mt-[-25px] flex flex-col items-start htb-bg lg:min-h-[95vh] xl:px-[73px] lg:px-10 px-5 pt-[39px] flex-1 w-full z-50 overflex-x-hidden">
       <h3 className="font-Rainball text-[57px] leading-[130%] tracking-[-1%] text-White rotate-[-6.55deg] mt-4 2xl:mt-8">
         How to Buy $meow
       </h3>

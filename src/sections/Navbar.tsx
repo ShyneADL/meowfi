@@ -17,6 +17,19 @@ const Navbar = () => {
 
   return (
     <nav className="pt-[40px] overflow-x-hidden z-50">
+      {/* Desktop Nav */}
+      <ul className="flex items-center gap-6 justify-center w-full">
+      {navLinks.map((link) => (
+          <li className="navlink cursor-pointer" key={link.title}>
+            <a
+              className="font-Rainball text-[19px] text-white tracking-[-1%]"
+              href={link.path}
+            >
+              {link.title}
+            </a>
+          </li>
+        ))}
+      </ul>
       {/* Hamburger Menu Icon for Mobile */}
       <div className="md:hidden absolute top-10 right-10 z-[9000]">
         <button

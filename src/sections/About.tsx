@@ -1,7 +1,7 @@
 const About = () => {
   return (
-    <div className="relative flex lg:flex-row flex-col items-start lg:justify-between lg:px-20 px-2 pt-[30px] min-h-[100vh] overflow-x-hidden w-full">
-      <div className="relative h-[190px] z-[300]">
+    <div className="relative flex lg:flex-row flex-col items-start lg:justify-between lg:px-20 px-2 pt-[30px] lg:min-h-[100vh] min-h-[85vh] overflow-x-hidden w-full">
+      <div className="relative lg:h-[190px] z-[300] lg:mx-0 mx-auto">
         <h2
           className="font-Rainball font-normal about leading-[85.22px] tracking-[-1%]"
           style={{
@@ -12,7 +12,7 @@ const About = () => {
         </h2>
         <img
   src="/images/arrow.webp"
-  className="relative bottom-0 xl:left-20 left-0"
+  className="lg:flex hidden relative bottom-0 xl:left-20 left-0"
   style={{
     width: "clamp(110px, 21.48vw, 275px)", 
     height: "clamp(45.2px, 8.83vw, 113px)", 

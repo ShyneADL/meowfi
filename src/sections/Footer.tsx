@@ -8,20 +8,26 @@ const navLinks = [
 const Footer = () => {
   return (
     <div className="bg-[#622409] relative mt-[-80px] flex flex-col items-center justify-center pt-[60px] pb-[33px] w-full z-[120] overflow-x-hidden">
-  <div className="flex items-end gap-[68px]">
+  <div className="flex items-end justify-center flex-wrap md:gap-[68px] gap-4 min-h-[171px] h-auto w-full">
     <img
       src="/images/footer-cat.webp"
-      style={{ width: 'clamp(126px, 211px, 274px)', height: 'clamp(147px, 245px, 319px)' }}
       className="aspect-[0.86/1] object-contain"
+      style={{width: "clamp(147px, 19.14vw, 269.5px)"}}
     />
-    <p 
-      className="font-Rainball text-white h-[145px]" 
-      style={{ fontSize: 'clamp(111px, 185px, 240px)' }}
-    >
-      Meowfi
-    </p>
+    <p  
+  className="font-Rainball text-white"
+  style={{ 
+    fontSize: "clamp(74px, 14.45vw, 185px)", 
+    lineHeight: "clamp(48px, 9.38vw, 120px)" 
+  }}
+>
+  Meowfi
+</p>
+
+
+
   </div>
-  <ul className="flex items-center gap-[28px] mt-[76px]">
+  <ul className="flex flex-wrap items-center justify-center gap-y-[8px] gap-[28px] mt-[76px] w-full">
     {navLinks.map((link) => (
       <li key={link.title} className="text-white text-[18px] mt-4">
         <a href={link.path}>{link.title}</a>
