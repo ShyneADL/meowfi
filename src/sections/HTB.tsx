@@ -21,7 +21,7 @@ const htbDetails = [
 
 const HTB = () => {
   return (
-    <div className="relative mt-[-25px] flex flex-col items-start htb-bg lg:min-h-[95vh] xl:px-[73px] lg:px-10 px-5 pt-[39px] flex-1 w-full z-50 overflex-x-hidden">
+    <div className="relative mt-[-25px] flex flex-col items-start htb-bg pb-32 xl:px-[73px] lg:px-10 px-5 pt-[39px] flex-1 w-full z-50 overflex-x-hidden">
       <h3 className="font-Rainball text-[57px] leading-[130%] tracking-[-1%] text-White rotate-[-6.55deg] mt-4 2xl:mt-8">
         How to Buy $meow
       </h3>
@@ -71,7 +71,7 @@ const HTB = () => {
         <img
           src="/images/htb-bottom.png"
           alt="htb-bottom"
-          className="flex  relative bottom-[20%] -translate-y-[20%] left-1/2 -translate-x-1/2 w-[981px] h-[135px] z-[1] object-contain"
+          className="flex lg:visible invisible relative bottom-[20%] -translate-y-[20%] left-1/2 -translate-x-1/2 w-[981px] h-[135px] z-[1] object-contain"
         />
       </div>
     </div>

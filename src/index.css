@@ -1,28 +1,157 @@
-@font-face {
-  font-family: Rainball;
-  src: url("../src/assets/fonts/Rainball.ttf") format("truetype");
-}
-@font-face {
-  font-family: Inter;
-  src: url("../src/assets/fonts/Inter.ttf") format("truetype");
-}
-@font-face {
-  font-family: Veritas;
-  src: url("../src/assets/fonts/LTVeritas-Regular.ttf") format("truetype");
-}
-@import "tailwindcss";
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-@theme {
-  --font-Rainball: "Rainball", sans-serif;
-  --font-Inter: "Inter", sans-serif;
-  --font-Veritas: "Veritas", sans-serif;
+/* Update font-face declarations to ensure correct paths and formats */
+@font-face {
+  font-family: 'Rainball';
+  src: url('/fonts/Rainball.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
-  --color-primary: #561e05;
-  --color-primary-100: #d9ad99;
-  --color-primary-500: #fd5910;
-  --color-star: #f27036;
-  --color-Black: #030202;
-  --color-White: #f4f4f4;
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Veritas';
+  src: url('/fonts/LTVeritas-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: #561e05;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: #561e05;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: #561e05;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: #561e05;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    background-image: radial-gradient(
+      circle at top right,
+      rgba(255, 107, 0, 0.05),
+      transparent 40%
+    );
+    background-attachment: fixed;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-muted rounded-full;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted-foreground/50;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply relative backdrop-blur-xl bg-white/10 dark:bg-black/20 
+           border border-white/20 dark:border-white/10 
+           shadow-lg rounded-2xl overflow-hidden;
+  }
+
+  .glass-effect {
+    @apply after:absolute after:inset-0 
+           after:bg-glass-gradient after:opacity-20
+           after:rounded-2xl after:z-[-1];
+  }
+
+  .glass-shine {
+    @apply before:absolute before:inset-0 
+           before:bg-glass-shine before:bg-[length:200%_100%]
+           before:animate-shimmer before:z-[-1];
+  }
+
+  .token-input {
+    @apply w-full bg-transparent font-medium text-3xl text-right 
+           placeholder-muted-foreground/50 focus:outline-none;
+  }
 }
 
 @layer base {
@@ -39,7 +168,6 @@
 }
 
 body {
-  width: 100%;
   min-height: 100vh;
 }
 
@@ -180,26 +308,35 @@ h1 {
   color: hsla(0, 3%, 1%, 0.85);
 }
 
+@media screen and (min-width:1024px) {
+
+
 .about-box {
-  
-    background: url("/images/about-box.webp");
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: contain;
-    width: clamp(300px, 58.67vw, 751px); 
-    height: clamp(164px, 32.03vw, 410px); 
-    padding-left: clamp(48px, 7.42vw, 95px); 
-    padding-right: clamp(17.6px, 3.44vw, 44px); 
-    padding-top: clamp(20px, 3.91vw, 50px); 
-    padding-bottom: clamp(10px, 1.95vw, 25px); 
+  background-color: #561E05; /* Ensure background is visible */
+  -webkit-mask-image: url("/images/about-box.svg");
+  mask-image: url("/images/about-box.svg");
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+
+@apply flex flex-col items-center lg:w-[643px] xl:w-[745px] md:w-[750px] w-[130%] lg:h-[328px] xl:h-[410px] md:h-[380px] h-[350px];
+@apply  lg:pl-[97px] md:pl-[84px] pl-[58px] lg:pr-[44px] md:pr-[40px] pr-[28px] xl:pt-[40px] md:pt-[25px] pt-[40px] lg:pb-[30px] md:pb-[15px] pb-[0px];
+}
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 900px) {
   .about-box {
-    background: url("/images/about-box-mobile.png");
-    @apply w-full h-full;
+  -webkit-mask-image: none;
+  mask-image: none;
+  @apply bg-[#561E05] w-full px-4 py-5;
   }
+
 }
+
+
 
 .htb-bg {
   background: url("/images/htb-bg.webp");

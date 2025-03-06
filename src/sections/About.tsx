@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <div className="relative flex lg:flex-row flex-col items-start lg:justify-between lg:px-20 px-2 pt-[30px] lg:min-h-[100vh] min-h-[85vh] overflow-x-hidden w-full">
+    <div className="relative flex lg:flex-row flex-col lg:items-start items-center lg:justify-between lg:px-20 px-0 pt-[30px] lg:min-h-[100vh] min-h-[100vh] overflow-x-hidden w-full">
       <div className="relative lg:h-[190px] z-[300] lg:mx-0 mx-auto">
         <h2
           className="font-Rainball font-normal about leading-[85.22px] tracking-[-1%]"
@@ -19,21 +19,16 @@ const About = () => {
   }}
 />
       </div>
-      <div className="about-box z-[50]">
+      <div className="about-box md:mb-0 mb-60 z-[50]">
   <p
-    className="font-Veritas font-medium leading-[27px] text-White w-full"
-    style={{
-      fontSize: "clamp(14px, 1.64vw, 23.1px)", // 40% smaller on small screens, 10% larger on large screens
-    }}
+    className="font-Veritas font-medium leading-[27px] text-[13.5px] md:text-[18px] xl:text-[23px] text-White  md:w-full w-[90%]"
   >
     As a project, Memecat’s mission is simple: to free memes from the
     clutches of Web2 algorithms and give them back to the community.{" "}
   </p>
   <p
-    className="font-Veritas font-medium leading-[27px] text-White w-full"
-    style={{
-      fontSize: "clamp(14px, 1.64vw, 23.1px)", // 40% smaller on small screens, 10% larger on large screens
-    }}
+    className="font-Veritas text-[13.5px] md:text-[18px] xl:text-[23px] font-medium leading-[27px] text-White md:w-full w-[90%]"
+    
   >
     Unlike Web2 platforms, where memes vanish or are stolen, Memecat
     offers true ownership with mintable, tradeable NFTs, and rewards
@@ -41,10 +36,8 @@ const About = () => {
     laugh adds value to the decentralized meme economy.{" "}
   </p>
   <p
-    className="font-Veritas font-medium leading-[27px] text-White w-full"
-    style={{
-      fontSize: "clamp(14px, 1.64vw, 23.1px)", // 40% smaller on small screens, 10% larger on large screens
-    }}
+    className="font-Veritas text-[13.5px] md:text-[18px] xl:text-[23px] font-medium leading-[27px] text-White md:w-full w-[90%]"
+    
   >
     From Meow Battles to community governance, Memecat transforms memes
     into assets, ensuring they stay immortal on the blockchain.
