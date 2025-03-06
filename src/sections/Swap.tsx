@@ -23,7 +23,7 @@ export function Swap() {
               </p>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-4 mb-8">
+            <div className="flex flex-col sm:flex-row flex-wrap gap-4 mb-8">
               <a 
                 href="https://sepoliafaucet.com/" 
                 target="_blank" 
