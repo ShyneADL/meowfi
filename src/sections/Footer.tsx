@@ -4,7 +4,7 @@ const navLinks = [
   { title: "Home", path: "#home" },
   { title: "About", path: "#about" },
   { title: "How to buy", path: "#how-to-buy" },
-  { title: "Swap", path: "#Swap" },
+  { title: "Tokenomics", path: "#Tokenomics" },
 ];
 
 const Footer = () => {
