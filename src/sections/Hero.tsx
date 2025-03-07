@@ -20,7 +20,10 @@ const icons = [
 
 const Hero = () => {
   return (
-    <div id='home' className=" relative hero w-full min-h-[100vh] pb-20 overflow-x-hidden">
+    <div
+      id="home"
+      className=" relative hero w-full min-h-[100vh] pb-20 overflow-x-hidden"
+    >
       <Navbar />
       <div className="flex flex-col items-start gap-6 md:mt-[82px] mt-10 lg:px-[100px] md:px-[60px] px-6 z-[2]">
         <h1 className="font-Rainball text-white leading-[90%] tracking-[-1%] max-w-[1031px] w-full z-[2]">
@@ -40,13 +43,11 @@ const Hero = () => {
               <p className="w-[105px]">Buy Meowfi</p>
             </div>
           </button>
-          <div className='flex items-center gap-4'>
-
-
-          {icons.map((icon) => (
-            <img className="size-[48.56px]" src={icon.icon} alt={icon.alt} />
-          ))}
-            </div>
+          <div className="flex items-center gap-4">
+            {icons.map((icon) => (
+              <img className="size-[48.56px]" src={icon.icon} alt={icon.alt} />
+            ))}
+          </div>
         </div>
         <img
           src="/images/cat-hero.webp"

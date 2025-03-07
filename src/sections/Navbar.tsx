@@ -23,38 +23,49 @@ const Navbar = () => {
 
   const formatAddress = (address) => {
     if (!address) return "";
-    return `${address.substring(0, 6)}...${address.substring(address.length - 4)}`;
+    return `${address.substring(0, 6)}...${address.substring(
+      address.length - 4
+    )}`;
   };
 
   return (
     <nav className="pt-[40px] z-50 relative">
       {/* Desktop Navbar */}
-      <div className="lg:flex hidden items-center justify-between w-full px-6">
-        <div />
+      <div className="lg:flex hidden items-center justify-center w-full px-6">
         <ul className="flex items-center gap-6">
           {navLinks.map((link) => (
             <li className="navlink cursor-pointer" key={link.title}>
-              <a className="font-Rainball text-[19px] text-white tracking-[-1%]" href={link.path}>
+              <a
+                className="font-Rainball text-[19px] text-white tracking-[-1%]"
+                href={link.path}
+              >
                 {link.title}
               </a>
             </li>
           ))}
         </ul>
 
-        <Button
+        {/* <Button
           onClick={isConnected ? handleDisconnect : connectWallet}
           className="bg-primary-500 hover:bg-primary-600 text-white rounded-full px-4 py-2 flex items-center gap-2 w-[152.42px]"
           variant="default"
         >
           <Wallet className="h-5 w-5" />
           {isConnected ? formatAddress(address || "") : "Connect Wallet"}
-        </Button>
+        </Button> */}
       </div>
 
       {/* Mobile Menu Button */}
       <div className="lg:hidden block absolute top-10 right-10 z-[9000]">
-        <button onClick={toggleNavbar} className="text-white focus:outline-none">
-          {isOpen ? <X size={30} className="text-orange-500" /> : <Menu size={30} />}
+        <button
+          onClick={toggleNavbar}
+          className="text-white focus:outline-none"
+        >
+          {isOpen ? (
+            <X size={30} className="text-orange-500" />
+          ) : (
+            <Menu size={30} />
+          )}
         </button>
       </div>
 
@@ -65,7 +76,10 @@ const Navbar = () => {
         }`}
         style={{ zIndex: 8000 }}
       >
-        <button onClick={toggleNavbar} className="absolute top-10 right-10 text-white">
+        <button
+          onClick={toggleNavbar}
+          className="absolute top-10 right-10 text-white"
+        >
           <X size={30} className="text-orange-500" />
         </button>
 
@@ -83,7 +97,7 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <Button
+        {/* <Button
           onClick={() => {
             isConnected ? handleDisconnect() : connectWallet();
             setIsOpen(false);
@@ -93,7 +107,7 @@ const Navbar = () => {
         >
           <Wallet className="h-5 w-5" />
           {isConnected ? formatAddress(address || "") : "Connect Wallet"}
-        </Button>
+        </Button> */}
       </div>
     </nav>
   );

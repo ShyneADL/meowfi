@@ -1,35 +1,30 @@
-/* Font import */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-
-/* Update font-face declarations to ensure correct paths and formats */
-@font-face {
-  font-family: 'Rainball';
-  src: url('/fonts/Rainball.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Inter';
-  src: url('/fonts/Inter.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Veritas';
-  src: url('/fonts/LTVeritas-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Rainball";
+  src: url("/fonts/Rainball.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Veritas";
+  src: url("/fonts/LTVeritas-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 @layer base {
   :root {
@@ -115,15 +110,15 @@
     width: 8px;
     height: 8px;
   }
-  
+
   ::-webkit-scrollbar-track {
     background: transparent;
   }
-  
+
   ::-webkit-scrollbar-thumb {
     @apply bg-muted rounded-full;
   }
-  
+
   ::-webkit-scrollbar-thumb:hover {
     @apply bg-muted-foreground/50;
   }
@@ -308,35 +303,39 @@ h1 {
   color: hsla(0, 3%, 1%, 0.85);
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
+  .about-box {
+    background-color: #561e05;
+    -webkit-mask-image: url("/images/about-box.svg");
+    mask-image: url("/images/about-box.svg");
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
 
-
-.about-box {
-  background-color: #561E05; /* Ensure background is visible */
-  -webkit-mask-image: url("/images/about-box.svg");
-  mask-image: url("/images/about-box.svg");
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  mask-position: center;
-
-@apply flex flex-col items-center lg:w-[643px] xl:w-[745px] md:w-[750px] w-[130%] lg:h-[328px] xl:h-[410px] md:h-[380px] h-[350px];
-@apply  lg:pl-[97px] md:pl-[84px] pl-[58px] lg:pr-[44px] md:pr-[40px] pr-[28px] xl:pt-[40px] md:pt-[25px] pt-[40px] lg:pb-[30px] md:pb-[15px] pb-[0px];
-}
+    @apply flex flex-col items-center lg:w-[643px] xl:w-[745px] md:w-[750px] w-[130%] lg:h-[328px] xl:h-[410px] md:h-[380px] h-[350px];
+    @apply lg:pl-[97px] md:pl-[84px] pl-[58px] lg:pr-[44px] md:pr-[40px] pr-[28px] xl:pt-[40px] md:pt-[25px] pt-[40px] lg:pb-[30px] md:pb-[15px] pb-[0px];
+  }
 }
 
 @media screen and (max-width: 900px) {
   .about-box {
-  -webkit-mask-image: none;
-  mask-image: none;
-  @apply bg-[#561E05] w-full px-4 py-5;
+    -webkit-mask-image: none;
+    mask-image: none;
+    @apply bg-[#561E05] w-full px-4 py-5;
   }
-
 }
 
-
+.stage-box {
+  background: url("/images/brown-rect.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 352.71px;
+  height: 63px;
+  @apply flex items-center justify-center;
+}
 
 .htb-bg {
   background: url("/images/htb-bg.webp");

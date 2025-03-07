@@ -6,73 +6,20 @@
     <link rel="icon" type="image/webp" href="/images/small-cat.webp" />
     <title>Meowfi</title>
     <meta name="description" content="Meowfi's memecoin website" />
-    <meta name="author" content="Meowfi" /> <style>
-      #loader {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #561e05;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 500000;
-      }
-
-      .loader-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .loader-content img {
-        width: 96px;
-        height: auto;
-        margin-bottom: 20px;
-      }
-
-      .loader-text {
-        color: white;
-        font-size: 24px;
-        font-family: Arial, sans-serif;
-      }
-
-      @keyframes dots {
-        0%,
-        20% {
-          content: "";
-        }
-        40% {
-          content: ".";
-        }
-        60% {
-          content: "..";
-        }
-        80%,
-        100% {
-          content: "...";
-        }
-      }
-
-      .loader-dots::after {
-        content: "";
-        animation: dots 1.5s infinite;
-      }
-    </style>
+    <meta name="author" content="Meowfi" />
+    <link
+      rel="preload"
+      href="/fonts/Rainball.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
   </head>
-  <body>
-    <!-- Loader -->
-    <div id="loader">
-      <div class="loader-content">
-        <img src="/small-cat.webp" alt="Meowfi Logo" />
-        <div class="loader-text">
-          Loading<span class="loader-dots"></span>
-        </div>
-      </div>
-    </div>
 
-    <!-- Root Element for React -->
+  <body>
     <div id="root"></div>
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
