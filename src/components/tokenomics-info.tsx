@@ -15,12 +15,11 @@ const TokInfo: React.FC<TokInfoProps> = ({
 }) => {
   return (
     <div
-      className={`relative pt-[23px] pb-[11px] px-4 rounded-[15px] border border-White overflow-x-hidden ${
+      className={`relative pt-[23px] pb-[11px] px-4 rounded-[15px] border border-White overflow-x-hidden md:w-auto w-full ${
         bg === "brown" ? "t-brown-bg" : "t-white-bg"
       }`}
     >
       <div className="flex items-center gap-2">
-        <img src={icon === "blue" ? "" : ""} />
         <p
           className={`${
             bg === "brown" ? "text-white" : "text-black"
@@ -35,7 +34,7 @@ const TokInfo: React.FC<TokInfoProps> = ({
           <li
             className={`${
               bg === "brown" ? "text-white" : "text-black"
-            } text-[22px] font-Veritas`}
+            } md:text-[22px] text-[18px] font-Veritas`}
           >
             {opt}
           </li>

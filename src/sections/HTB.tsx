@@ -23,7 +23,7 @@ const HTB = () => {
   return (
     <section
       id="how-to-buy"
-      className="relative mt-[-25px] flex flex-col items-start htb-bg pb-32 xl:px-[73px] lg:px-10 px-5 pt-[39px] flex-1 w-full z-50 overflex-x-hidden"
+      className="relative mt-[-25px] flex flex-col items-start htb-bg lg:pb-32 pb-10 xl:px-[73px] lg:px-10 px-5 pt-[39px] flex-1 w-full z-50 overflex-x-hidden"
     >
       <h3 className="font-Rainball text-[57px] leading-[130%] tracking-[-1%] text-White rotate-[-6.55deg] mt-4 2xl:mt-8">
         How to Buy $meow

@@ -316,7 +316,7 @@ h1 {
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1023px) {
   .about-box {
     -webkit-mask-image: none;
     mask-image: none;
