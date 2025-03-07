@@ -6,6 +6,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import { Swap } from "./sections/Swap";
 
 const queryClient = new QueryClient();
 
@@ -18,7 +19,7 @@ const App = () => {
     const handleLoad = () => {
       loadTimer = setTimeout(() => {
         setIsLoading(false);
-      }, 20);
+      }, 200);
     };
 
     window.addEventListener("load", handleLoad);
@@ -38,6 +39,7 @@ const App = () => {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/swap" element={<Swap />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

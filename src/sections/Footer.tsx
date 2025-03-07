@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const navLinks = [
   { title: "Home", path: "#home" },
   { title: "About", path: "#about" },
@@ -31,11 +33,13 @@ const Footer = () => {
           </li>
         ))}
       </ul>
-      <button className="buy-btn rounded-[100px] p-[4px] mt-[40px]">
-        <div className="bg-primary-100 font-Rainball text-black text-2xl tracking-[-1%] rounded-[100px] py-[15px] px-[102px]">
-          <p className="w-[105px]">Buy Meowfi</p>
-        </div>
-      </button>
+      <Link to="/swap">
+        <button className="buy-btn rounded-[100px] cursor-pointer p-[4px]">
+          <div className="bg-primary-100 font-Rainball text-black text-2xl tracking-[-1%] rounded-[100px] py-[15px] px-[102px]">
+            <p className="w-[105px]">Buy Meowfi</p>
+          </div>
+        </button>
+      </Link>
       <p className="font-Veritas text-sm leading-[130%] text-white mt-[30px]">
         @MEOWFI,2025, All Rights Reserved
       </p>

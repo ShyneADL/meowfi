@@ -2,6 +2,7 @@ import Navbar from "./Navbar";
 import tg from "/images/tg.webp";
 import x from "/images/x.webp";
 import dc from "/images/dc.webp";
+import { Link } from "react-router-dom";
 
 const icons = [
   {
@@ -38,11 +39,13 @@ const Hero = () => {
           the community.
         </p>
         <div className="flex items-center lg:flex-row flex-col gap-4 mt-9 z-[20] lg:w-[auto] w-full">
-          <button className="buy-btn rounded-[100px] cursor-pointer p-[4px]">
-            <div className="bg-primary-100 font-Rainball text-black text-2xl tracking-[-1%] rounded-[100px] py-[15px] px-[102px]">
-              <p className="w-[105px]">Buy Meowfi</p>
-            </div>
-          </button>
+          <Link to="/swap">
+            <button className="buy-btn rounded-[100px] cursor-pointer p-[4px]">
+              <div className="bg-primary-100 font-Rainball text-black text-2xl tracking-[-1%] rounded-[100px] py-[15px] px-[102px]">
+                <p className="w-[105px]">Buy Meowfi</p>
+              </div>
+            </button>
+          </Link>
           <div className="flex items-center gap-4">
             {icons.map((icon) => (
               <img className="size-[48.56px]" src={icon.icon} alt={icon.alt} />
