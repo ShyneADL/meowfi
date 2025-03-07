@@ -22,7 +22,7 @@ const About = () => {
           }}
         />
       </div>
-      <div className="about-box md:mb-0 mb-60 z-[50]">
+      <div className="about-box md:mb-0 mb-32 z-[50]">
         <p className="font-Veritas font-medium leading-[27px] text-[13.5px] md:text-[18px] xl:text-[23px] text-White  md:w-full w-[90%]">
           As a project, Memecat’s mission is simple: to free memes from the
           clutches of Web2 algorithms and give them back to the community.{" "}
