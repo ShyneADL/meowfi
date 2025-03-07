@@ -2,7 +2,7 @@ const navLinks = [
   { title: "Home", path: "#home" },
   { title: "About", path: "#about" },
   { title: "How to buy", path: "#how-to-buy" },
-  { title: "Tokenomics", path: "#tokenomics" },
+  { title: "Swap", path: "#Swap" },
 ];
 
 const Footer = () => {

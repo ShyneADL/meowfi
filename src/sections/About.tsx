@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <div className="relative flex lg:flex-row flex-col lg:items-start items-center lg:justify-between lg:px-20 px-0 pt-[30px] lg:min-h-[100vh] min-h-[100vh] overflow-x-hidden w-full">
+    <section id='about' className="relative flex lg:flex-row flex-col lg:items-start items-center lg:justify-between lg:px-20 px-0 pt-[30px] lg:min-h-[100vh] min-h-[100vh] overflow-x-hidden w-full">
       <div className="relative lg:h-[190px] z-[300] lg:mx-0 mx-auto">
         <h2
           className="font-Rainball font-normal about leading-[85.22px] tracking-[-1%]"
@@ -65,7 +65,7 @@ const About = () => {
           style={{ width: "clamp(320px, 63.3vw, 1053px)", height: "auto" }}
         />
       </div>
-    </div>
+    </section>
   );
 };
 

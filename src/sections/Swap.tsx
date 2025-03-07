@@ -5,9 +5,9 @@ import { AddTokenButton } from "@/components/add-token-button";
 
 export function Swap() {
   return (
-    <div className="w-full -mt-[220px] bg-white z-[10000]">
+    <main id='swap' className="w-full -mt-[220px] bg-white z-[10000]">
 
-    <main className="flex-1 flex items-center justify-center bg-white pt-24 pb-16 px-4 ">
+    <div className="flex-1 flex items-center justify-center bg-white pt-24 pb-16 px-4 ">
         <div className="grid max-w-screen-xl grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="order-2 lg:order-1">
             <div className="mb-6">
@@ -97,7 +97,7 @@ export function Swap() {
             </div>
           </div>
         </div>
-      </main>
-    </div>
+      </div>
+    </main>
   )
 }
