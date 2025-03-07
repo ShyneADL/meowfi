@@ -32,7 +32,7 @@ const TokenomicsData = [
 
 const Tokenomics = () => {
   return (
-    <section className="w-full flexs items-center justify-center pt-4 pb-[77px] px-4 bg-[#561e05]">
+    <section className="w-full flex items-center justify-center pt-4 pb-[77px] px-4 bg-[#561e05]">
       <div className="max-w-screen-2xl flex flex-col items-center justify-center">
         <h2 className="tokenomics-text font-Rainball font-normal md:tracking-[18px] tracking-[12px] text-[#030202] xl:text-[200px] lg:text-[150px] md:text-[120px] min-[401px]:text-[60px] max-[400px]:text-[40px] mb-4">
           Tokenomics
