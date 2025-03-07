@@ -33,7 +33,7 @@ const Footer = () => {
           </li>
         ))}
       </ul>
-      <Link to="/swap" className="z-10">
+      <Link to="/swap" className="z-10 mt-8">
         <button className="buy-btn rounded-[100px] cursor-pointer p-[4px]">
           <div className="bg-primary-100 font-Rainball text-black text-2xl tracking-[-1%] rounded-[100px] py-[15px] px-[102px]">
             <p className="w-[105px]">Buy Meowfi</p>
