@@ -25,7 +25,7 @@ export function Swap() {
             
             <div className="flex flex-col sm:flex-row flex-wrap gap-4 mb-8">
               <a 
-                href="https://sepoliafaucet.com/" 
+                href="https://cloud.google.com/application/web3/faucet/ethereum/sepolia" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center h-12 px-6 
@@ -91,7 +91,7 @@ export function Swap() {
             </div>
           </div>
           
-          <div className="order-1 lg:order-2 flex justify-center">
+          <div className="order-1 lg:order-2 flex justify-end">
             <div className="w-full max-w-md transform hover:translate-y-[-5px] transition-transform duration-300">
               <SwapCard />
             </div>
