@@ -299,10 +299,6 @@ h1 {
   animation: scroll 20s linear infinite;
 }
 
-.about {
-  color: hsla(0, 3%, 1%, 0.85);
-}
-
 @media screen and (min-width: 1024px) {
   .about-box {
     background-color: #561e05;
@@ -332,9 +328,54 @@ h1 {
   background: url("/images/brown-rect.webp");
   background-repeat: no-repeat;
   background-position: center;
-  width: 352.71px;
-  height: 63px;
+  background-size: contain;
+  width: 264px;
   @apply flex items-center justify-center;
+}
+
+.stage-cont {
+  /* ff 3.6+ */
+  background: -moz-linear-gradient(
+    150deg,
+    rgba(253, 89, 16, 1) 0%,
+    rgba(187, 85, 40, 0.23) 100%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-linear-gradient(
+    150deg,
+    rgba(253, 89, 16, 1) 0%,
+    rgba(187, 85, 40, 0.23) 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-linear-gradient(
+    150deg,
+    rgba(253, 89, 16, 1) 0%,
+    rgba(187, 85, 40, 0.23) 100%
+  );
+
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#BB5528', endColorstr='#FD5910', GradientType=1 );
+
+  /* ie 10+ */
+  background: -ms-linear-gradient(
+    150deg,
+    rgba(253, 89, 16, 1) 0%,
+    rgba(187, 85, 40, 0.23) 100%
+  );
+
+  /* global 94%+ browsers support */
+  background: linear-gradient(
+    150deg,
+    rgba(253, 89, 16, 1) 0%,
+    rgba(187, 85, 40, 0.23) 100%
+  );
+}
+
+.tokenomics-text {
+  color: transparent;
+  -webkit-text-stroke: 3px white;
 }
 
 .htb-bg {

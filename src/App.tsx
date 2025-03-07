@@ -18,7 +18,7 @@ const App = () => {
     const handleLoad = () => {
       loadTimer = setTimeout(() => {
         setIsLoading(false);
-      }, 2000);
+      }, 20);
     };
 
     window.addEventListener("load", handleLoad);

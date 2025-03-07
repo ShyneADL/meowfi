@@ -1,7 +1,5 @@
 const Tokenomics = () => {
-  return (
-    <div>Tokenomics</div>
-  )
-}
+  return <section>Tokenomics</section>;
+};
 
-export default Tokenomics
+export default Tokenomics;

@@ -6,6 +6,7 @@ import Hero from "@/sections/Hero";
 import Footer from "@/sections/Footer";
 import { useWallet } from "@/hooks/use-wallet";
 import Roadmap from "@/sections/Roadmap";
+import Tokenomics from "@/sections/Tokenomics";
 
 const Index = () => {
   const { isConnected } = useWallet();
@@ -17,6 +18,7 @@ const Index = () => {
       <About />
       <HTB />
       <Roadmap />
+      <Tokenomics />
       <Footer />
     </div>
   );
