@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Menu, X, Wallet } from "lucide-react";
+import { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { title: "Home", path: "#home" },
@@ -10,6 +10,19 @@ const navLinks = [
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+
+    return () => {
+      document.body.classList.remove("overflow-hidden");
+    };
+  }, [isOpen]);
+
   const toggleNavbar = () => setIsOpen(!isOpen);
 
   return (
@@ -71,18 +84,6 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-
-        {/* <Button
-          onClick={() => {
-            isConnected ? handleDisconnect() : connectWallet();
-            setIsOpen(false);
-          }}
-          className="mt-6 bg-primary-500 hover:bg-primary-600 text-white rounded-full px-4 py-2 flex items-center gap-2"
-          variant="default"
-        >
-          <Wallet className="h-5 w-5" />
-          {isConnected ? formatAddress(address || "") : "Connect Wallet"}
-        </Button> */}
       </div>
     </nav>
   );
