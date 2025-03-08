@@ -18,7 +18,7 @@ const SwapPage = () => {
     )}`;
   };
   return (
-    <main className="flex flex-col items-center justify-center w-full bg-white h-screen">
+    <main className="flex flex-col items-center justify-center w-full bg-white lg:py-0 py-6 min-h-screen">
       <nav className="flex items-center justify-end w-full px-10">
         <Button
           onClick={isConnected ? handleDisconnect : connectWallet}

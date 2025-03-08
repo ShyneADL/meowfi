@@ -94,7 +94,7 @@ export function Swap() {
             </div>
           </div>
 
-          <div className="order-1 lg:order-2 flex justify-end">
+          <div className="order-1 lg:order-2 flex lg:justify-end justify-center">
             <div className="w-full max-w-md transform hover:translate-y-[-5px] transition-transform duration-300">
               <SwapCard />
             </div>
