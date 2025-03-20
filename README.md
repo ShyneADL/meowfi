@@ -1,69 +1,65 @@
-# Welcome to your Lovable project
+# MeowFi
 
-## Project info
+MeowFi is a memecoin landing page featuring a DEX swap interface that allows users to swap **$MEOW** tokens to **Sepolia ETH**. Built with cutting-edge web3 technologies, MeowFi provides a seamless and fun trading experience for crypto enthusiasts.
 
-**URL**: https://lovable.dev/projects/c749a6ef-49be-4805-9975-495c3e8077d9
+## 🚀 Features
+- **Memecoin Landing Page** – A sleek and playful UI designed to attract the MeowFi community.
+- **DEX Swap Interface** – Users can easily swap $MEOW tokens for Sepolia ETH.
+- **Web3 Integration** – Connect your wallet to interact with the MeowFi smart contract.
+- **Fast & Responsive** – Built with React, Tailwind, and ShadCN for a smooth user experience.
+- **Secure Smart Contracts** – Developed using Solidity and tested with Foundry.
 
-## How can I edit this code?
+## 🛠 Tech Stack
+- **Frontend:** React, Tailwind CSS, ShadCN
+- **Blockchain:** Solidity, Foundry
+- **Wallet Integration:** Ethers.js
+- **Smart Contract Deployment:** Sepolia Testnet
 
-There are several ways of editing your application.
+## 📦 Installation
 
-**Use Lovable**
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/ShyneADL/meowfi.git
+   cd meowfi
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Set up environment variables in a `.env` file:
+   ```sh
+   VITE_ALCHEMY_API_KEY=your_api_key
+   VITE_CONTRACT_ADDRESS=your_contract_address
+   VITE_WALLET_CONNECT_PROJECT_ID=your_project_id
+   ```
+4. Start the development server:
+   ```sh
+   npm run dev
+   ```
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/c749a6ef-49be-4805-9975-495c3e8077d9) and start prompting.
+## 🔗 Smart Contract Deployment (Foundry)
+1. Install Foundry:
+   ```sh
+   curl -L https://foundry.paradigm.xyz | bash
+   foundryup
+   ```
+2. Compile the contract:
+   ```sh
+   forge build
+   ```
+3. Run tests:
+   ```sh
+   forge test
+   ```
+4. Deploy to Sepolia:
+   ```sh
+   forge script script/Deploy.s.sol:Deploy --rpc-url https://sepolia.infura.io/v3/YOUR_INFURA_KEY --private-key YOUR_PRIVATE_KEY --broadcast
+   ```
 
-Changes made via Lovable will be committed automatically to this repo.
+## 📜 License
+This project is licensed under the MIT License.
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Enjoy swapping with **MeowFi**! 🐱💰
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/c749a6ef-49be-4805-9975-495c3e8077d9) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
